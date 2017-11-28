@@ -1,6 +1,11 @@
 # atomicoind #
 
-### Ansible playbook for provisioning CentOS Atomic EC2 Hosts and installing a Bitcoin Core container ###
+### An Ansible playbook for provisioning CentOS Atomic Host EC2 instances and installing Bitcoin in a container ###
+
+Notes:
+---------------------
+This playbook includes two roles.  The first one provisions new CentOS Atomic Host instances. The second one installs a Docker container with Bitcoin Core installed.
+
 
 To run:
 ---------------------
@@ -14,3 +19,5 @@ To run:
 ```bash
     ansible-playbook -b atomicoind.yml
 ```    
+
+The Bitcoin container can be found here: https://hub.docker.com/r/c0reysc0tt/mybitcoind/
