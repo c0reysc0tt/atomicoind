@@ -1,7 +1,6 @@
 # atomicoind #
 
-### Ansible playbook for provisioning EC2 hosts ###
-
+### Ansible playbook for provisioning CentOS Atomic EC2 Hosts and installing a Bitcoin Core container ###
 
 To run:
 ---------------------
