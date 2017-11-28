@@ -1,0 +1,9 @@
+ins_type: "t2.micro"
+ec2_region: "us-east-1"
+ec2_image: "ami-70e8fd66"
+ec2_keypair: "REDACTED"
+ec2_secgroup: "REDACTED"
+ec2_subnet: "subnet-REDACTED"
+ec2_tag_Name: "Atomic"
+ec2_tag_Type: "Atomic"
+ins_count: 1
