@@ -1,0 +1,19 @@
+--- # Playbook to spin up CentOS Atomic Host instances and run a Bitcoin Core container
+ - hosts: localhost
+   connection: local
+   gather_facts: false
+   user: centos
+   pre_tasks:
+    - include_vars: vars/ec2.yml
+   roles:
+   - ec2instance
+
+ - hosts: Atomic
+   user: centos
+   become: True
+   become_user: root
+   become_method: sudo
+   pre_tasks:
+    - include_vars: vars/ec2.yml
+   roles:
+   - mybitcoind

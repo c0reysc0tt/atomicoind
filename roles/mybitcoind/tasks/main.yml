@@ -1,0 +1,23 @@
+--- # roles/mybitcoind/tasks/main.yml
+ - name: Start docker
+   service:
+     name: docker
+     state: running
+
+ - name: Pull mybitcoind image
+   docker_image:
+     name: c0reysc0tt/mybitcoind
+
+ - name: (Re)start mybitcoind container
+   docker_container:
+    name: mybicoind
+    image: c0reysc0tt/mybitcoind
+    state: started
+    restart: yes
+    ports:
+    - '8332'
+    - '8333'
+    - '18332'
+    - '18333'
+    - '18444'     
+
