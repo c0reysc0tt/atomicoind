@@ -1,3 +1,4 @@
+atomicoind.retry
 # vars/ec2.yml
 vars/ec2.yml.bak
 vars/ec2.yml.redacted
