@@ -27,6 +27,7 @@ NOTE: If your private key isn't already included in your ansible config, you'll 
 About the instance:
 ---------------------
 This instance runs CentOS Atomic Host, which already has Docker installed, but sudo is required to run all docker commands by default.  For more info on this, see:
+
 https://www.projectatomic.io/blog/2015/08/why-we-dont-let-non-root-users-run-docker-in-centos-fedora-or-rhel/
 
 About the Container:
