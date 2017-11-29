@@ -48,4 +48,4 @@ To run other commands, you can either start the container again and attach to it
 ```
 From this prompt you can run commands such as 'bitcoind -version' to test the container.
 
-The container can be found here: https://hub.docker.com/r/c0reysc0tt/mybitcoind/
+The image for the container can be found here: https://hub.docker.com/r/c0reysc0tt/mybitcoind/
